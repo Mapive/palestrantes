@@ -1,27 +1,22 @@
 import React from 'react';
-import { render } from "react-dom";
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Palestrantes from "./pages/palestrantes";
-import Certificado from "./pages/certificado";
-import Cadastro from "./pages/cadastro";
-import Home from "./pages/home";
-import Sobre from "./pages/sobre";
+import Palestrantes from "./pages/Palestrantes";
+import Certificado from "./pages/Certificado";
+import Controle from "./pages/Controle";
+import { createRoot } from 'react-dom/client';
 
 const rootElement = document.getElementById("root");
-render(
+const root = createRoot(rootElement);
+root.render(
   <BrowserRouter>
     <App />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="palestrantes" element={<Palestrantes />} />
-      <Route path="cadastro" element={<Cadastro />} />
-      <Route path="sobre" element={<Sobre />} />
+      <Route path="/" element={<Palestrantes />} />
       <Route path="certificado" element={<Certificado />} />
+      <Route path="controle" element={<Controle />} />
     </Routes>
-    
-  </BrowserRouter>,
-  rootElement
+  </BrowserRouter>
 );
