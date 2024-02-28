@@ -7,16 +7,21 @@
       "email": "marcos@marcos",
       "delete": "false",
       "theme": "Tema Marcos",
-      "id": 1
+      "id": 1,
+      "historico": []
     },
     {
       "name": "Jean Pereira",
-      "position": "Cargo ",
-      "company": "Empresa Jean",
+      "position": "Programador Sênior",
+      "company": "FEARP",
       "email": "jean@jean",
       "delete": "false",
-      "theme": "Tema Jean",
-      "id": 2
+      "theme": "Desenvolvimento Ágil",
+      "id": 2,
+      "phone": "16999999997",
+      "linkedin": "https://www.linkedin.com/in/jean",
+      "area": "Tecnologia",
+      "historico": []
     },
     {
       "name": "Camilla Nappi",
@@ -25,7 +30,33 @@
       "email": "cami@cami",
       "id": 3,
       "theme": "Tema Camilla",
-      "delete": "false"
+      "delete": "false",
+      "historico": []
+    },
+    {
+      "name": "Caliu Pina",
+      "email": "caliucaliu@gmail.com",
+      "phone": "77999999999",
+      "company": "Dev LTDA",
+      "position": "Desenvolvedor Junior",
+      "theme": "Acessibilidade na Web",
+      "linkedin": "https://www.linkedin.com/in/caliu",
+      "delete": "false",
+      "id": 4,
+      "area": "Desenvolvimento Web",
+      "historico": []
+    },
+    {
+      "name": "teste",
+      "email": "jadgsuaadvfcwvdgchj@gmail.com",
+      "phone": "9999999999999",
+      "company": "teste",
+      "position": "teste",
+      "area": "teste",
+      "theme": "teste",
+      "linkedin": "",
+      "delete": "false",
+      "id": 5
     }
   ],
   "certificados": [
@@ -68,6 +99,14 @@
       "title": "213",
       "subject": "disciplina a",
       "id": 5
+    },
+    {
+      "palestrante": "Caliu Pina",
+      "date": "2023-11-13",
+      "duration": "2",
+      "title": "Industria 4.0",
+      "subject": "disciplina c",
+      "id": 6
     }
   ],
   "temas": [
@@ -95,15 +134,2251 @@
   "disciplinas": [
     {
       "id": 1,
-      "name": "disciplina a"
+      "codigo": "RAD1513",
+      "name": "Administração da Produção e Operações"
     },
     {
       "id": 2,
-      "name": "disciplina b"
+      "codigo": "RAD1503",
+      "name": "Administração de Logística e da Cadeia de Suprimentos"
     },
     {
       "id": 3,
-      "name": "disciplina c"
+      "codigo": "RAD1501",
+      "name": "Administração de Operações I"
+    },
+    {
+      "id": 4,
+      "codigo": "RAD1502",
+      "name": "Administração de Operações II"
+    },
+    {
+      "id": 5,
+      "codigo": "RAD2804",
+      "name": "Administração de Operações II"
+    },
+    {
+      "id": 6,
+      "codigo": "RAD2104",
+      "name": "Administração de Organizações da Sociedade Civil"
+    },
+    {
+      "id": 7,
+      "codigo": "RAD2107",
+      "name": "Administração de Projetos"
+    },
+    {
+      "id": 8,
+      "codigo": "RAD1204",
+      "name": "Administração de Recursos Humanos"
+    },
+    {
+      "id": 9,
+      "codigo": "RAD1205",
+      "name": "Administração de Recursos Humanos II"
+    },
+    {
+      "id": 10,
+      "codigo": "RAD1207",
+      "name": "Administração Financeira I"
+    },
+    {
+      "id": 11,
+      "codigo": "RAD1303",
+      "name": "Administração Financeira I"
+    },
+    {
+      "id": 12,
+      "codigo": "RCC0333",
+      "name": "Administração Financeira I"
+    },
+    {
+      "id": 13,
+      "codigo": "RAD1304",
+      "name": "Administração Financeira II"
+    },
+    {
+      "id": 14,
+      "codigo": "RCC0334",
+      "name": "Administração Financeira II"
+    },
+    {
+      "id": 15,
+      "codigo": "RAD1309",
+      "name": "Administração Pública"
+    },
+    {
+      "id": 16,
+      "codigo": "RAD1617",
+      "name": "Administração Pública"
+    },
+    {
+      "id": 17,
+      "codigo": "RAD1512",
+      "name": "Administração: Gestão e Logística"
+    },
+    {
+      "id": 18,
+      "codigo": "RCC0420",
+      "name": "Agronegócios e Mercados Futuros"
+    },
+    {
+      "id": 19,
+      "codigo": "RCC0124",
+      "name": "Ambiente, Estratégia e Arquitetura Organizacional"
+    },
+    {
+      "id": 20,
+      "codigo": "RCC0202",
+      "name": "Análise das Demonstrações Financeiras"
+    },
+    {
+      "id": 21,
+      "codigo": "RCC0315",
+      "name": "Análise de Custos"
+    },
+    {
+      "id": 22,
+      "codigo": "RAD2810",
+      "name": "Análise de Dados para Gestão de Negócios"
+    },
+    {
+      "id": 23,
+      "codigo": "REC3413",
+      "name": "Análise de Documentos Históricos Brasileiros"
+    },
+    {
+      "id": 24,
+      "codigo": "RCC0302",
+      "name": "Análise de Liquidez"
+    },
+    {
+      "id": 25,
+      "codigo": "RCC9003",
+      "name": "Análise de Relatórios Financeiros"
+    },
+    {
+      "id": 26,
+      "codigo": "RCC8400",
+      "name": "Análise de Risco"
+    },
+    {
+      "id": 27,
+      "codigo": "RCC0442",
+      "name": "Análise de Sistemas"
+    },
+    {
+      "id": 28,
+      "codigo": "RAD2223",
+      "name": "Análise de Viabilidade Econômico-Financeira de Projetos de Investimento"
+    },
+    {
+      "id": 29,
+      "codigo": "REC3115",
+      "name": "Análise Econômica do Direito"
+    },
+    {
+      "id": 30,
+      "codigo": "RAD1302",
+      "name": "Análise Financeira"
+    },
+    {
+      "id": 31,
+      "codigo": "REC2415",
+      "name": "Análise Macroeconômica do Brasil Contemporâneo"
+    },
+    {
+      "id": 32,
+      "codigo": "REC3603",
+      "name": "Apreçamento de Ativos"
+    },
+    {
+      "id": 33,
+      "codigo": "RAD1708",
+      "name": "Atividades Acadêmicas Complementares de Cultura e Extensão (AACCE)"
+    },
+    {
+      "id": 34,
+      "codigo": "RAD1706",
+      "name": "Atividades Acadêmicas Complementares de Graduação (AACG)"
+    },
+    {
+      "id": 35,
+      "codigo": "RAD1707",
+      "name": "Atividades Acadêmicas Complementares de Pesquisa (AACPq)"
+    },
+    {
+      "id": 36,
+      "codigo": "RCC0468",
+      "name": "Atividades de Cultura e Extensão - Escolas públicas"
+    },
+    {
+      "id": 37,
+      "codigo": "RCC0401",
+      "name": "Auditoria Independente e Perícia"
+    },
+    {
+      "id": 38,
+      "codigo": "RAD2303",
+      "name": "Avaliação de Empresas"
+    },
+    {
+      "id": 39,
+      "codigo": "RCC0503",
+      "name": "Avaliação de Empresas"
+    },
+    {
+      "id": 40,
+      "codigo": "REC3310",
+      "name": "Avaliação de Políticas Públicas"
+    },
+    {
+      "id": 41,
+      "codigo": "RAD2509",
+      "name": "Business Analytics"
+    },
+    {
+      "id": 42,
+      "codigo": "RCC0432",
+      "name": "Business Intelligence Aplicado à Contabilidade"
+    },
+    {
+      "id": 43,
+      "codigo": "RCC0433",
+      "name": "Casos em Controladoria"
+    },
+    {
+      "id": 44,
+      "codigo": "RCC0335",
+      "name": "Casos em Finanças"
+    },
+    {
+      "id": 45,
+      "codigo": "RAD2607",
+      "name": "Ciência de Dados I"
+    },
+    {
+      "id": 46,
+      "codigo": "RAD2608",
+      "name": "Ciência de dados II"
+    },
+    {
+      "id": 47,
+      "codigo": "RAD2401",
+      "name": "Comércio Eletrônico"
+    },
+    {
+      "id": 48,
+      "codigo": "RAD1402",
+      "name": "Comportamento do Consumidor"
+    },
+    {
+      "id": 49,
+      "codigo": "RAD1202",
+      "name": "Comportamento Organizacional"
+    },
+    {
+      "id": 50,
+      "codigo": "RAD1307",
+      "name": "Comportamento Organizacional"
+    },
+    {
+      "id": 51,
+      "codigo": "RAD1201",
+      "name": "Comunicação e Trabalho em Grupo"
+    },
+    {
+      "id": 52,
+      "codigo": "RCC0206",
+      "name": "Contabilidade de Custos"
+    },
+    {
+      "id": 53,
+      "codigo": "RCC1921",
+      "name": "Contabilidade de Custos"
+    },
+    {
+      "id": 54,
+      "codigo": "RCC0328",
+      "name": "Contabilidade de Grupos Empresariais"
+    },
+    {
+      "id": 55,
+      "codigo": "RCC0313",
+      "name": "Contabilidade de Instituições Financeiras"
+    },
+    {
+      "id": 56,
+      "codigo": "RCC0312",
+      "name": "Contabilidade dos Tributos"
+    },
+    {
+      "id": 57,
+      "codigo": "RCC2102",
+      "name": "Contabilidade e Gestão Baseada Em Valor"
+    },
+    {
+      "id": 58,
+      "codigo": "RCC0119",
+      "name": "Contabilidade e Negócios"
+    },
+    {
+      "id": 59,
+      "codigo": "RCC0114",
+      "name": "Contabilidade e Responsabilidade Social"
+    },
+    {
+      "id": 60,
+      "codigo": "RCC1911",
+      "name": "Contabilidade Empresarial"
+    },
+    {
+      "id": 61,
+      "codigo": "RCC0109",
+      "name": "Contabilidade Financeira I"
+    },
+    {
+      "id": 62,
+      "codigo": "RCC0204",
+      "name": "Contabilidade Financeira II"
+    },
+    {
+      "id": 63,
+      "codigo": "RCC0125",
+      "name": "Contabilidade Gerencial I"
+    },
+    {
+      "id": 64,
+      "codigo": "RCC0126",
+      "name": "Contabilidade Gerencial II"
+    },
+    {
+      "id": 65,
+      "codigo": "RCC0453",
+      "name": "Contabilidade Governamental"
+    },
+    {
+      "id": 66,
+      "codigo": "RCC9005",
+      "name": "Contabilidade Governamental"
+    },
+    {
+      "id": 67,
+      "codigo": "RCC0457",
+      "name": "Contabilidade para Instrumentos Financeiros"
+    },
+    {
+      "id": 68,
+      "codigo": "RCC9002",
+      "name": "Contabilidade para Juristas"
+    },
+    {
+      "id": 69,
+      "codigo": "REC2200",
+      "name": "Contabilidade Social"
+    },
+    {
+      "id": 70,
+      "codigo": "RCC0309",
+      "name": "Contabilidade Tributária I"
+    },
+    {
+      "id": 71,
+      "codigo": "RCC0416",
+      "name": "Contabilidade Tributária II"
+    },
+    {
+      "id": 72,
+      "codigo": "RCC0437",
+      "name": "Controladoria e Estratégia"
+    },
+    {
+      "id": 73,
+      "codigo": "RCC0412",
+      "name": "Controladoria na Gestão Pública"
+    },
+    {
+      "id": 74,
+      "codigo": "RCC8500",
+      "name": "Controladoria Pública"
+    },
+    {
+      "id": 75,
+      "codigo": "RCC9006",
+      "name": "Controladoria Pública"
+    },
+    {
+      "id": 76,
+      "codigo": "RAD2214",
+      "name": "Cooperação e Gestão de Redes"
+    },
+    {
+      "id": 77,
+      "codigo": "RAD2105",
+      "name": "Criação de Novos Negócios"
+    },
+    {
+      "id": 78,
+      "codigo": "REC3114",
+      "name": "Crises Financeiras"
+    },
+    {
+      "id": 79,
+      "codigo": "RAD2321",
+      "name": "Cultura e Extensão: práticas de gestão de impacto"
+    },
+    {
+      "id": 80,
+      "codigo": "RAD2201",
+      "name": "Cultura e Poder nas Organizações"
+    },
+    {
+      "id": 81,
+      "codigo": "RAD2203",
+      "name": "Cultura Organizacional e Brasileira"
+    },
+    {
+      "id": 82,
+      "codigo": "RCC0221",
+      "name": "Data Analytics"
+    },
+    {
+      "id": 83,
+      "codigo": "RAD2405",
+      "name": "Decisões de Marketing em Mercados Organizacionais"
+    },
+    {
+      "id": 84,
+      "codigo": "REC3700",
+      "name": "Demografia Econômica"
+    },
+    {
+      "id": 85,
+      "codigo": "8101040",
+      "name": "Desenvolvimento de Competências Interculturais"
+    },
+    {
+      "id": 86,
+      "codigo": "RAD1604",
+      "name": "Desenvolvimento de Sistemas de Informação"
+    },
+    {
+      "id": 87,
+      "codigo": "REC3402",
+      "name": "Desenvolvimento e Pensamento Econômico Brasileiro"
+    },
+    {
+      "id": 88,
+      "codigo": "RAD2111",
+      "name": "Desenvolvimento Regional e o Agronegócio"
+    },
+    {
+      "id": 89,
+      "codigo": "RCC0209",
+      "name": "Design da Informação Contábil"
+    },
+    {
+      "id": 90,
+      "codigo": "RAD1108",
+      "name": "Design Estratégico de Negócios"
+    },
+    {
+      "id": 91,
+      "codigo": "RAD2601",
+      "name": "Direito Administrativo"
+    },
+    {
+      "id": 92,
+      "codigo": "RAD1605",
+      "name": "Direito Comercial"
+    },
+    {
+      "id": 93,
+      "codigo": "RCC8022",
+      "name": "Direito de Empresa Aplicado"
+    },
+    {
+      "id": 94,
+      "codigo": "RAD1703",
+      "name": "Direito do Trabalho"
+    },
+    {
+      "id": 95,
+      "codigo": "RCC8042",
+      "name": "Direito do Trabalho Aplicado"
+    },
+    {
+      "id": 96,
+      "codigo": "RAD2603",
+      "name": "Direito Internacional"
+    },
+    {
+      "id": 97,
+      "codigo": "RAD1618",
+      "name": "Direito Tributário"
+    },
+    {
+      "id": 98,
+      "codigo": "RCC8031",
+      "name": "Direito Tributário Aplicado"
+    },
+    {
+      "id": 99,
+      "codigo": "REC3104",
+      "name": "Distribuição de Renda e Pobreza"
+    },
+    {
+      "id": 100,
+      "codigo": "REC4004",
+      "name": "Econometria de Finanças"
+    },
+    {
+      "id": 101,
+      "codigo": "REC2301",
+      "name": "Econometria I"
+    },
+    {
+      "id": 102,
+      "codigo": "REC2312",
+      "name": "Econometria II"
+    },
+    {
+      "id": 103,
+      "codigo": "REC2302",
+      "name": "Econometria III"
+    },
+    {
+      "id": 104,
+      "codigo": "REC2413",
+      "name": "Economia Brasileira Contemporânea"
+    },
+    {
+      "id": 105,
+      "codigo": "REC3105",
+      "name": "Economia Comportamental"
+    },
+    {
+      "id": 106,
+      "codigo": "REC3411",
+      "name": "Economia da América Latina"
+    },
+    {
+      "id": 107,
+      "codigo": "REC3112",
+      "name": "Economia das Organizações"
+    },
+    {
+      "id": 108,
+      "codigo": "RAD1610",
+      "name": "Economia de Empresas"
+    },
+    {
+      "id": 109,
+      "codigo": "RCC0473",
+      "name": "Economia de Empresas, Organizações e Cooperativas"
+    },
+    {
+      "id": 110,
+      "codigo": "REC2112",
+      "name": "Economia do Setor Público"
+    },
+    {
+      "id": 111,
+      "codigo": "REC3111",
+      "name": "Economia do Trabalho"
+    },
+    {
+      "id": 112,
+      "codigo": "REC3205",
+      "name": "Economia dos Recursos Naturais"
+    },
+    {
+      "id": 113,
+      "codigo": "RCC0434",
+      "name": "Economia e Controladoria"
+    },
+    {
+      "id": 114,
+      "codigo": "RAD2701",
+      "name": "Economia e gestão de negócios na América Latina"
+    },
+    {
+      "id": 115,
+      "codigo": "RAD2229",
+      "name": "Economia e Gestão em Artes e Cultura"
+    },
+    {
+      "id": 116,
+      "codigo": "REC2111",
+      "name": "Economia Internacional"
+    },
+    {
+      "id": 117,
+      "codigo": "REC2212",
+      "name": "Economia Monetária"
+    },
+    {
+      "id": 118,
+      "codigo": "REC2106",
+      "name": "Economia para Advogados: Microeconomia"
+    },
+    {
+      "id": 119,
+      "codigo": "REC3412",
+      "name": "Economia Política Clássica"
+    },
+    {
+      "id": 120,
+      "codigo": "8103043",
+      "name": "Educação Fiscal"
+    },
+    {
+      "id": 121,
+      "codigo": "RCC0519",
+      "name": "Educação Tributária: Teoria e Prática (Modalidade Presencial e a Distância)"
+    },
+    {
+      "id": 122,
+      "codigo": "RCC0418",
+      "name": "Educação Tributária: Teoria e Prática I (modalidade presencial e a distância)"
+    },
+    {
+      "id": 123,
+      "codigo": "RCC0518",
+      "name": "Educação Tributária: Teoria e Prática II (modalidade presencial e a distância)"
+    },
+    {
+      "id": 124,
+      "codigo": "RAD1107",
+      "name": "Elaboração de Projetos"
+    },
+    {
+      "id": 125,
+      "codigo": "RCC0118",
+      "name": "Elaboração e Análise de Projetos"
+    },
+    {
+      "id": 126,
+      "codigo": "RCC9004",
+      "name": "Elaboração e Análise de Projetos"
+    },
+    {
+      "id": 127,
+      "codigo": "RAD2103",
+      "name": "Empreendedorismo"
+    },
+    {
+      "id": 128,
+      "codigo": "RAD2310",
+      "name": "Empreendedorismo Social e Finanças Sociais"
+    },
+    {
+      "id": 129,
+      "codigo": "RAD2108",
+      "name": "Enfoque Sistêmico na Administração"
+    },
+    {
+      "id": 130,
+      "codigo": "RCC1613",
+      "name": "Estágio"
+    },
+    {
+      "id": 131,
+      "codigo": "REC3503",
+      "name": "Estágio"
+    },
+    {
+      "id": 132,
+      "codigo": "RAD1620",
+      "name": "Estágio Supervisionado"
+    },
+    {
+      "id": 133,
+      "codigo": "RAD2805",
+      "name": "Estágio Supervisionado I"
+    },
+    {
+      "id": 134,
+      "codigo": "RAD2806",
+      "name": "Estágio Supervisionado II"
+    },
+    {
+      "id": 135,
+      "codigo": "RAD1408",
+      "name": "Estatística Aplicada à Administração"
+    },
+    {
+      "id": 136,
+      "codigo": "RAD1507",
+      "name": "Estatística Aplicada à Administração I"
+    },
+    {
+      "id": 137,
+      "codigo": "REC4024",
+      "name": "Estatística Aplicada: Tópicos Avançados"
+    },
+    {
+      "id": 138,
+      "codigo": "RAD1509",
+      "name": "Estatística multivariada para a tomada de decisão"
+    },
+    {
+      "id": 139,
+      "codigo": "RAD1511",
+      "name": "Estatística não-paramétrica para a tomada de decisão"
+    },
+    {
+      "id": 140,
+      "codigo": "RAD2311",
+      "name": "Estratégia e Design Thinking"
+    },
+    {
+      "id": 141,
+      "codigo": "RCC0301",
+      "name": "Estratégia Financeira"
+    },
+    {
+      "id": 142,
+      "codigo": "RAD2406",
+      "name": "Estratégias de Marketing em Mercados Organizacionais"
+    },
+    {
+      "id": 143,
+      "codigo": "RAD2402",
+      "name": "Estratégias em Agronegócios"
+    },
+    {
+      "id": 144,
+      "codigo": "RAD1104",
+      "name": "Estrutura Organizacional"
+    },
+    {
+      "id": 145,
+      "codigo": "RAD2708",
+      "name": "Estrutura Organizacional"
+    },
+    {
+      "id": 146,
+      "codigo": "RAD2319",
+      "name": "Estudo de Caso em Organizações e Gestão de Operações"
+    },
+    {
+      "id": 147,
+      "codigo": "RAD2225",
+      "name": "Estudo de Casos em Administração de Marketing"
+    },
+    {
+      "id": 148,
+      "codigo": "RAD2224",
+      "name": "Estudo de Casos em Administração Estratégica"
+    },
+    {
+      "id": 149,
+      "codigo": "RAD2200",
+      "name": "Estudo de Casos no Agronegócio"
+    },
+    {
+      "id": 150,
+      "codigo": "RAD1705",
+      "name": "Estudos de Modelos Aplicados à Economia e Administração"
+    },
+    {
+      "id": 151,
+      "codigo": "RAD2609",
+      "name": "Estudos em Economia e Estratégia"
+    },
+    {
+      "id": 152,
+      "codigo": "RAD1602",
+      "name": "Ética e Política"
+    },
+    {
+      "id": 153,
+      "codigo": "RCC0107",
+      "name": "Ética Geral e Profissional"
+    },
+    {
+      "id": 154,
+      "codigo": "RAD1607",
+      "name": "Filosofia"
+    },
+    {
+      "id": 155,
+      "codigo": "RAD2114",
+      "name": "Finanças Comportamentais"
+    },
+    {
+      "id": 156,
+      "codigo": "RCC0336",
+      "name": "Finanças Comportamentais"
+    },
+    {
+      "id": 157,
+      "codigo": "REC3600",
+      "name": "Finanças I"
+    },
+    {
+      "id": 158,
+      "codigo": "REC3610",
+      "name": "Finanças II"
+    },
+    {
+      "id": 159,
+      "codigo": "REC3601",
+      "name": "Finanças III"
+    },
+    {
+      "id": 160,
+      "codigo": "RAD1306",
+      "name": "Finanças Internacionais"
+    },
+    {
+      "id": 161,
+      "codigo": "RAD2709",
+      "name": "Finanças Internacionais"
+    },
+    {
+      "id": 162,
+      "codigo": "REC3203",
+      "name": "Finanças Internacionais"
+    },
+    {
+      "id": 163,
+      "codigo": "8101050",
+      "name": "Formação de Gestores Responsáveis"
+    },
+    {
+      "id": 164,
+      "codigo": "RAD2312",
+      "name": "Formação de Gestores Responsáveis"
+    },
+    {
+      "id": 165,
+      "codigo": "RCC0123",
+      "name": "Formação de Preços de Venda"
+    },
+    {
+      "id": 166,
+      "codigo": "REC2411",
+      "name": "Formação Econômica e Social do Brasil I"
+    },
+    {
+      "id": 167,
+      "codigo": "REC2402",
+      "name": "Formação Econômica e Social do Brasil II"
+    },
+    {
+      "id": 168,
+      "codigo": "RCC0427",
+      "name": "Fundamentos da Análise de Sistemas"
+    },
+    {
+      "id": 169,
+      "codigo": "RCC0207",
+      "name": "Fundamentos de Contabilidade Gerencial"
+    },
+    {
+      "id": 170,
+      "codigo": "RCC8008",
+      "name": "Fundamentos de Controladoria"
+    },
+    {
+      "id": 171,
+      "codigo": "RCC0121",
+      "name": "Fundamentos de Investimentos"
+    },
+    {
+      "id": 172,
+      "codigo": "RCC0210",
+      "name": "Fusão e Aquisição"
+    },
+    {
+      "id": 173,
+      "codigo": "RCC0122",
+      "name": "Fusões e Aquisições"
+    },
+    {
+      "id": 174,
+      "codigo": "RAD2403",
+      "name": "Gerência de Promoção e Vendas"
+    },
+    {
+      "id": 175,
+      "codigo": "RAD2117",
+      "name": "Gestão da Criatividade"
+    },
+    {
+      "id": 176,
+      "codigo": "RAD1105",
+      "name": "Gestão da Inovação"
+    },
+    {
+      "id": 177,
+      "codigo": "RAD2706",
+      "name": "Gestão da Inovação"
+    },
+    {
+      "id": 178,
+      "codigo": "RAD1504",
+      "name": "Gestão da Qualidade I"
+    },
+    {
+      "id": 179,
+      "codigo": "RAD2407",
+      "name": "Gestão de competências e carreiras nas organizações"
+    },
+    {
+      "id": 180,
+      "codigo": "RCC0439",
+      "name": "Gestão de Desempenho"
+    },
+    {
+      "id": 181,
+      "codigo": "RAD2226",
+      "name": "Gestão de Marketing de Lugares"
+    },
+    {
+      "id": 182,
+      "codigo": "RAD2308",
+      "name": "Gestão de Marketing para Mercados Organizacionais"
+    },
+    {
+      "id": 183,
+      "codigo": "RAD2116",
+      "name": "Gestão de Operações em Serviços"
+    },
+    {
+      "id": 184,
+      "codigo": "REC3612",
+      "name": "Gestão de Risco Quantitativo"
+    },
+    {
+      "id": 185,
+      "codigo": "RAD2208",
+      "name": "Gestão de Varejo e Serviços"
+    },
+    {
+      "id": 186,
+      "codigo": "RAD1101",
+      "name": "Gestão Empresarial"
+    },
+    {
+      "id": 187,
+      "codigo": "RCC0320",
+      "name": "Gestão Estratégica de Custos"
+    },
+    {
+      "id": 188,
+      "codigo": "RCC0337",
+      "name": "Gestão Financeira -  Teoria e Estudos de Casos"
+    },
+    {
+      "id": 189,
+      "codigo": "RAD2502",
+      "name": "Gestão Internacional de Operações"
+    },
+    {
+      "id": 190,
+      "codigo": "RAD2300",
+      "name": "Gestão pelo Diálogo"
+    },
+    {
+      "id": 191,
+      "codigo": "RAD2101",
+      "name": "Gestão Tecnológica"
+    },
+    {
+      "id": 192,
+      "codigo": "RCC0500",
+      "name": "Gestão Tributária"
+    },
+    {
+      "id": 193,
+      "codigo": "RAD2222",
+      "name": "Governança Corporativa"
+    },
+    {
+      "id": 194,
+      "codigo": "RCC0116",
+      "name": "Governança Corporativa"
+    },
+    {
+      "id": 195,
+      "codigo": "RCC0128",
+      "name": "Governança, Risco e Compliance"
+    },
+    {
+      "id": 196,
+      "codigo": "REC2401",
+      "name": "Grandes Economistas"
+    },
+    {
+      "id": 197,
+      "codigo": "REC2414",
+      "name": "História das Instituições Monetárias Modernas"
+    },
+    {
+      "id": 198,
+      "codigo": "REC2412",
+      "name": "História do Pensamento Econômico"
+    },
+    {
+      "id": 199,
+      "codigo": "REC2410",
+      "name": "História Econômica Geral"
+    },
+    {
+      "id": 200,
+      "codigo": "REC2416",
+      "name": "História Econômica Geral I"
+    },
+    {
+      "id": 201,
+      "codigo": "REC3410",
+      "name": "História Econômica: Interpretações do Brasil"
+    },
+    {
+      "id": 202,
+      "codigo": "REC2400",
+      "name": "História Monetária e Financeira Internacional"
+    },
+    {
+      "id": 203,
+      "codigo": "RAD2315",
+      "name": "Indicadores para Gestão"
+    },
+    {
+      "id": 204,
+      "codigo": "RCC0459",
+      "name": "Informação Contábil e Mercado de Capitais"
+    },
+    {
+      "id": 205,
+      "codigo": "RCC0428",
+      "name": "Informática Aplicada à Contabilidade"
+    },
+    {
+      "id": 206,
+      "codigo": "REC3505",
+      "name": "Iniciação Científica"
+    },
+    {
+      "id": 207,
+      "codigo": "RAD2704",
+      "name": "Inovação e Gerenciamento de Projetos em Organizações Públicas"
+    },
+    {
+      "id": 208,
+      "codigo": "RAD1702",
+      "name": "Instituições de Direito"
+    },
+    {
+      "id": 209,
+      "codigo": "RCC8011",
+      "name": "Instituições de Direito Aplicado"
+    },
+    {
+      "id": 210,
+      "codigo": "RAD2313",
+      "name": "International Law Applied to Business"
+    },
+    {
+      "id": 211,
+      "codigo": "RCC0430",
+      "name": "Introdução à Banco de Dados"
+    },
+    {
+      "id": 212,
+      "codigo": "RAD2605",
+      "name": "Introdução à ciência de dados"
+    },
+    {
+      "id": 213,
+      "codigo": "RCC0108",
+      "name": "Introdução à Contabilidade"
+    },
+    {
+      "id": 214,
+      "codigo": "RCC0436",
+      "name": "Introdução à Controladoria"
+    },
+    {
+      "id": 215,
+      "codigo": "REC2403",
+      "name": "Introdução à Economia Brasileira"
+    },
+    {
+      "id": 216,
+      "codigo": "REC3404",
+      "name": "Introdução à Economia Brasileira para Juristas"
+    },
+    {
+      "id": 217,
+      "codigo": "RAD1506",
+      "name": "Introdução à Estatística para Administração"
+    },
+    {
+      "id": 218,
+      "codigo": "REC2210",
+      "name": "Introdução à Macroeconomia"
+    },
+    {
+      "id": 219,
+      "codigo": "RAD1606",
+      "name": "Introdução à Microeconomia"
+    },
+    {
+      "id": 220,
+      "codigo": "REC2100",
+      "name": "Introdução à Microeconomia"
+    },
+    {
+      "id": 221,
+      "codigo": "RAD2118",
+      "name": "Introdução à Pesquisa Científica"
+    },
+    {
+      "id": 222,
+      "codigo": "REC2303",
+      "name": "Introdução à Probabilidade e à Estatística II"
+    },
+    {
+      "id": 223,
+      "codigo": "RCC0431",
+      "name": "Introdução à Programação para Contadores"
+    },
+    {
+      "id": 224,
+      "codigo": "RAD1700",
+      "name": "Introdução à Psicologia"
+    },
+    {
+      "id": 225,
+      "codigo": "RAD1701",
+      "name": "Introdução à Sociologia"
+    },
+    {
+      "id": 226,
+      "codigo": "RAD1206",
+      "name": "Introdução ao Comportamento Organizacional"
+    },
+    {
+      "id": 227,
+      "codigo": "REC3403",
+      "name": "Introdução ao Pensamento Econômico Brasileiro"
+    },
+    {
+      "id": 228,
+      "codigo": "REC3302",
+      "name": "Introdução ao R para Economistas"
+    },
+    {
+      "id": 229,
+      "codigo": "RAD2211",
+      "name": "Introdução aos Agronegócios"
+    },
+    {
+      "id": 230,
+      "codigo": "REC2700",
+      "name": "Introdução às Ciências Sociais"
+    },
+    {
+      "id": 231,
+      "codigo": "RCC0129",
+      "name": "Investimentos"
+    },
+    {
+      "id": 232,
+      "codigo": "RCC0208",
+      "name": "Laboratório de Aplicação de Normas Contábeis"
+    },
+    {
+      "id": 233,
+      "codigo": "RAD2400",
+      "name": "Laboratório de Diagnóstico Organizacional"
+    },
+    {
+      "id": 234,
+      "codigo": "RCC0127",
+      "name": "Laboratório de Gestão de Processos Contábeis e da Informação (oficina)"
+    },
+    {
+      "id": 235,
+      "codigo": "REC3211",
+      "name": "Macroeconometria"
+    },
+    {
+      "id": 236,
+      "codigo": "RAD2215",
+      "name": "Mapeamento de Processos"
+    },
+    {
+      "id": 237,
+      "codigo": "RAD1401",
+      "name": "Marketing I"
+    },
+    {
+      "id": 238,
+      "codigo": "RAD1403",
+      "name": "Marketing II"
+    },
+    {
+      "id": 239,
+      "codigo": "RAD1505",
+      "name": "Matemática Aplicada à Administração"
+    },
+    {
+      "id": 240,
+      "codigo": "REC2304",
+      "name": "Matemática Aplicada à Economia"
+    },
+    {
+      "id": 241,
+      "codigo": "RCC0218",
+      "name": "Matemática e Cálculo Aplicados à Contabilidade"
+    },
+    {
+      "id": 242,
+      "codigo": "RAD1301",
+      "name": "Matemática Financeira"
+    },
+    {
+      "id": 243,
+      "codigo": "RCC0217",
+      "name": "Matemática Financeira"
+    },
+    {
+      "id": 244,
+      "codigo": "REC3613",
+      "name": "Matemática Financeira"
+    },
+    {
+      "id": 245,
+      "codigo": "RCC0222",
+      "name": "Matemática Financeira Aplicada à Contabilidade"
+    },
+    {
+      "id": 246,
+      "codigo": "RCC9001",
+      "name": "Matemática para Juristas"
+    },
+    {
+      "id": 247,
+      "codigo": "RAD2212",
+      "name": "Meio Ambiente e Sustentabilidade"
+    },
+    {
+      "id": 248,
+      "codigo": "RAD2707",
+      "name": "Meio Ambiente e Sustentabilidade"
+    },
+    {
+      "id": 249,
+      "codigo": "RAD1305",
+      "name": "Mercado de Capitais I"
+    },
+    {
+      "id": 250,
+      "codigo": "RAD2801",
+      "name": "Mercado de Capitais I"
+    },
+    {
+      "id": 251,
+      "codigo": "RAD2301",
+      "name": "Mercado de Capitais II"
+    },
+    {
+      "id": 252,
+      "codigo": "RCC0407",
+      "name": "Mercado Financeiro I"
+    },
+    {
+      "id": 253,
+      "codigo": "RCC0331",
+      "name": "Mercados e Instrumentos Financeiros I"
+    },
+    {
+      "id": 254,
+      "codigo": "RCC0332",
+      "name": "Mercados e Instrumentos Financeiros II"
+    },
+    {
+      "id": 255,
+      "codigo": "REC3400",
+      "name": "Metodologia da Análise Econômica"
+    },
+    {
+      "id": 256,
+      "codigo": "RCC0469",
+      "name": "Metodologia do Trabalho Científico em Contabilidade I"
+    },
+    {
+      "id": 257,
+      "codigo": "RCC0470",
+      "name": "Metodologia do Trabalho Científico em Contabilidade II"
+    },
+    {
+      "id": 258,
+      "codigo": "REC3312",
+      "name": "Métodos de Machine Learning"
+    },
+    {
+      "id": 259,
+      "codigo": "RAD2803",
+      "name": "Métodos de Votação e Teoria da Escolha Social"
+    },
+    {
+      "id": 260,
+      "codigo": "RCC0305",
+      "name": "Métodos Quantitativos I"
+    },
+    {
+      "id": 261,
+      "codigo": "RCC0304",
+      "name": "Métodos Quantitativos II"
+    },
+    {
+      "id": 262,
+      "codigo": "RAD2316",
+      "name": "Mindfulness e Teoria U para Projetos Colaborativos"
+    },
+    {
+      "id": 263,
+      "codigo": "RAD2314",
+      "name": "Mindfulness para a vida profissional: foco, senso de propósito, resiliência e empatia"
+    },
+    {
+      "id": 264,
+      "codigo": "RCC0510",
+      "name": "Modelagem Financeira"
+    },
+    {
+      "id": 265,
+      "codigo": "RAD1110",
+      "name": "Modelos de Negociação"
+    },
+    {
+      "id": 266,
+      "codigo": "RCC8204",
+      "name": "Monografia em Ciências Contábeis I"
+    },
+    {
+      "id": 267,
+      "codigo": "RCC8205",
+      "name": "Monografia em Ciências Contábeis II"
+    },
+    {
+      "id": 268,
+      "codigo": "REC2501",
+      "name": "Monografia em Ciências Econômicas I"
+    },
+    {
+      "id": 269,
+      "codigo": "REC2512",
+      "name": "Monografia em Ciências Econômicas II"
+    },
+    {
+      "id": 270,
+      "codigo": "8108131",
+      "name": "Monografia em Finanças e Negócios I"
+    },
+    {
+      "id": 271,
+      "codigo": "8108132",
+      "name": "Monografia em Finanças e Negócios II"
+    },
+    {
+      "id": 272,
+      "codigo": "REC2500",
+      "name": "Monografia I"
+    },
+    {
+      "id": 273,
+      "codigo": "REC2511",
+      "name": "Monografia II"
+    },
+    {
+      "id": 274,
+      "codigo": "RAD2102",
+      "name": "Mudança Organizacional"
+    },
+    {
+      "id": 275,
+      "codigo": "RAD2409",
+      "name": "Negócios baseado em Propósito, uma abordagem Integral"
+    },
+    {
+      "id": 276,
+      "codigo": "RAD1609",
+      "name": "Orçamento Empresarial"
+    },
+    {
+      "id": 277,
+      "codigo": "RCC0438",
+      "name": "Orçamento Empresarial"
+    },
+    {
+      "id": 278,
+      "codigo": "REC2103",
+      "name": "Organização Industrial"
+    },
+    {
+      "id": 279,
+      "codigo": "RAD2901",
+      "name": "Pesquisa Aplicada em Administração para a Elaboração de Trabalhos Científicos e Empresariais"
+    },
+    {
+      "id": 280,
+      "codigo": "RAD1208",
+      "name": "Pesquisa de Marketing"
+    },
+    {
+      "id": 281,
+      "codigo": "RAD1404",
+      "name": "Pesquisa de Marketing"
+    },
+    {
+      "id": 282,
+      "codigo": "RAD1508",
+      "name": "Pesquisa Operacional I"
+    },
+    {
+      "id": 283,
+      "codigo": "RAD1510",
+      "name": "Pesquisa Operacional II"
+    },
+    {
+      "id": 284,
+      "codigo": "RAD1308",
+      "name": "Planejamento e Administração Estratégica"
+    },
+    {
+      "id": 285,
+      "codigo": "RAD2802",
+      "name": "Planejamento e Gestão Estratégica"
+    },
+    {
+      "id": 286,
+      "codigo": "RAD1405",
+      "name": "Planejamento e Gestão Estratégica de Marketing"
+    },
+    {
+      "id": 287,
+      "codigo": "RAD2213",
+      "name": "Planejamento Estratégico nas Organizações"
+    },
+    {
+      "id": 288,
+      "codigo": "RCC9007",
+      "name": "Planejamento Tributário I"
+    },
+    {
+      "id": 289,
+      "codigo": "RCC9008",
+      "name": "Planejamento Tributário II"
+    },
+    {
+      "id": 290,
+      "codigo": "RAD1103",
+      "name": "Planejamento, Competitividade e Controle"
+    },
+    {
+      "id": 291,
+      "codigo": "RAD1109",
+      "name": "Política de Negócios II"
+    },
+    {
+      "id": 292,
+      "codigo": "REC3204",
+      "name": "Política Fiscal e Orçamento Público"
+    },
+    {
+      "id": 293,
+      "codigo": "RCC0219",
+      "name": "Probabilidade e Estatística Aplicadas à Contabilidade I"
+    },
+    {
+      "id": 294,
+      "codigo": "RCC0220",
+      "name": "Probabilidade e Estatística Aplicadas à Contabilidade II"
+    },
+    {
+      "id": 295,
+      "codigo": "REC3313",
+      "name": "Programação e Simulação de Modelos Econométricos em R"
+    },
+    {
+      "id": 296,
+      "codigo": "REC2311",
+      "name": "Programação para Economistas"
+    },
+    {
+      "id": 297,
+      "codigo": "RAD2606",
+      "name": "Redes econômicas e sociais"
+    },
+    {
+      "id": 298,
+      "codigo": "RAD2809",
+      "name": "Redes Econômicas e Sociais"
+    },
+    {
+      "id": 299,
+      "codigo": "RAD2318",
+      "name": "Região Metropolitana de Ribeirão Preto: Sociedade, Economia, Tecnologia e Inovação"
+    },
+    {
+      "id": 300,
+      "codigo": "RAD2702",
+      "name": "Remuneração"
+    },
+    {
+      "id": 301,
+      "codigo": "RCC8051",
+      "name": "Reorganização Societária, Falência e Recuperação de Empresas"
+    },
+    {
+      "id": 302,
+      "codigo": "RAD1619",
+      "name": "Responsabilidade Social nas Organizações"
+    },
+    {
+      "id": 303,
+      "codigo": "RAD2705",
+      "name": "Responsabilidade Social nas Organizações"
+    },
+    {
+      "id": 304,
+      "codigo": "RAD2320",
+      "name": "Seminários de Estudos de Casos em Estratégia"
+    },
+    {
+      "id": 305,
+      "codigo": "RAD2202",
+      "name": "Seminários de Liderança"
+    },
+    {
+      "id": 306,
+      "codigo": "RCC0112",
+      "name": "Simulação de Negócios"
+    },
+    {
+      "id": 307,
+      "codigo": "RAD2221",
+      "name": "Sistema Brasileiro de Inovação: Estrutura, Características e Funcionamento"
+    },
+    {
+      "id": 308,
+      "codigo": "RAD1611",
+      "name": "Sistemas de Apoio à Tomada de Decisão"
+    },
+    {
+      "id": 309,
+      "codigo": "RCC0448",
+      "name": "Sistemas Integrados de Gestão"
+    },
+    {
+      "id": 310,
+      "codigo": "RAD1608",
+      "name": "Sistemas Integrados e de Apoio a Decisão"
+    },
+    {
+      "id": 311,
+      "codigo": "REC3710",
+      "name": "Sociologia"
+    },
+    {
+      "id": 312,
+      "codigo": "RAD1203",
+      "name": "Sociologia Aplicada à Administração"
+    },
+    {
+      "id": 313,
+      "codigo": "RAD1209",
+      "name": "Sociologia das Organizações"
+    },
+    {
+      "id": 314,
+      "codigo": "RAD2209",
+      "name": "Sociologia do Consumo"
+    },
+    {
+      "id": 315,
+      "codigo": "RAD2703",
+      "name": "Sociologia do Consumo"
+    },
+    {
+      "id": 316,
+      "codigo": "REC3304",
+      "name": "Técnicas de Demonstração Matemática"
+    },
+    {
+      "id": 317,
+      "codigo": "REC2510",
+      "name": "Técnicas de Pesquisa em Economia"
+    },
+    {
+      "id": 318,
+      "codigo": "RCC8006",
+      "name": "Técnicas de Pesquisa em Finanças e Negócios"
+    },
+    {
+      "id": 319,
+      "codigo": "RAD1603",
+      "name": "Técnicas de Pesquisa I"
+    },
+    {
+      "id": 320,
+      "codigo": "RAD2218",
+      "name": "Técnicas de Pesquisa II"
+    },
+    {
+      "id": 321,
+      "codigo": "RAD2119",
+      "name": "Tecnologia da Informação Aplicada à Administração"
+    },
+    {
+      "id": 322,
+      "codigo": "RCC8009",
+      "name": "Tecnologia e Sistemas de Informação"
+    },
+    {
+      "id": 323,
+      "codigo": "RAD0111",
+      "name": "Teoria da Administração"
+    },
+    {
+      "id": 324,
+      "codigo": "RCC0452",
+      "name": "Teoria da Contabilidade I"
+    },
+    {
+      "id": 325,
+      "codigo": "RAD1102",
+      "name": "Teoria das Organizações"
+    },
+    {
+      "id": 326,
+      "codigo": "RAD1407",
+      "name": "Teoria das Organizações"
+    },
+    {
+      "id": 327,
+      "codigo": "REC3201",
+      "name": "Teoria do Desenvolvimento Econômico"
+    },
+    {
+      "id": 328,
+      "codigo": "REC3110",
+      "name": "Teoria dos Jogos"
+    },
+    {
+      "id": 329,
+      "codigo": "RAD2317",
+      "name": "Teoria dos Jogos Aplicada à Administração"
+    },
+    {
+      "id": 330,
+      "codigo": "RAD2307",
+      "name": "Teoria dos Jogos Aplicada à Administração I"
+    },
+    {
+      "id": 331,
+      "codigo": "RAD2808",
+      "name": "Teoria dos Jogos e Tomada de Decisão em Grupo"
+    },
+    {
+      "id": 332,
+      "codigo": "REC2213",
+      "name": "Teoria Econômica para Juristas"
+    },
+    {
+      "id": 333,
+      "codigo": "REC2104",
+      "name": "Teoria Econômica: Macroeconomia"
+    },
+    {
+      "id": 334,
+      "codigo": "REC2113",
+      "name": "Teoria Econômica: Microeconomia"
+    },
+    {
+      "id": 335,
+      "codigo": "REC2201",
+      "name": "Teoria Macroeconômica I"
+    },
+    {
+      "id": 336,
+      "codigo": "REC2211",
+      "name": "Teoria Macroeconômica II"
+    },
+    {
+      "id": 337,
+      "codigo": "REC2202",
+      "name": "Teoria Macroeconômica III"
+    },
+    {
+      "id": 338,
+      "codigo": "REC2101",
+      "name": "Teoria Microeconômica I"
+    },
+    {
+      "id": 339,
+      "codigo": "REC2110",
+      "name": "Teoria Microeconômica II"
+    },
+    {
+      "id": 340,
+      "codigo": "REC2102",
+      "name": "Teoria Microeconômica III"
+    },
+    {
+      "id": 341,
+      "codigo": "REC3414",
+      "name": "Teorias Contemporâneas de Economia"
+    },
+    {
+      "id": 342,
+      "codigo": "RAD2807",
+      "name": "Tomada de Decisão nas Organizações"
+    },
+    {
+      "id": 343,
+      "codigo": "RAD2508",
+      "name": "Tomada de Decisão nas Organizações I"
+    },
+    {
+      "id": 344,
+      "codigo": "RAD2408",
+      "name": "Tomada de Decisões nas Organizações II"
+    },
+    {
+      "id": 345,
+      "codigo": "RAD2602",
+      "name": "Tópicos Avançados de Economia de Empresas"
+    },
+    {
+      "id": 346,
+      "codigo": "RAD2404",
+      "name": "Tópicos Avançados de Marketing"
+    },
+    {
+      "id": 347,
+      "codigo": "RAD2506",
+      "name": "Tópicos Avançados de Métodos Quantitativos"
+    },
+    {
+      "id": 348,
+      "codigo": "RAD2204",
+      "name": "Tópicos Avançados de Recursos Humanos"
+    },
+    {
+      "id": 349,
+      "codigo": "RAD2604",
+      "name": "Tópicos Avançados de Sistemas de Informação"
+    },
+    {
+      "id": 350,
+      "codigo": "RCC9901",
+      "name": "Tópicos Complementares de Contabilidade I"
+    },
+    {
+      "id": 351,
+      "codigo": "RCC9902",
+      "name": "Tópicos Complementares de Contabilidade II"
+    },
+    {
+      "id": 352,
+      "codigo": "RCC9903",
+      "name": "Tópicos Complementares de Contabilidade III"
+    },
+    {
+      "id": 353,
+      "codigo": "RCC9904",
+      "name": "Tópicos Complementares de Contabilidade IV"
+    },
+    {
+      "id": 354,
+      "codigo": "RCC9905",
+      "name": "Tópicos Complementares de Contabilidade V"
+    },
+    {
+      "id": 355,
+      "codigo": "RCC9906",
+      "name": "Tópicos Complementares de Contabilidade VI"
+    },
+    {
+      "id": 356,
+      "codigo": "RCC0117",
+      "name": "Tópicos de Contabilidade Financeira I"
+    },
+    {
+      "id": 357,
+      "codigo": "RCC0111",
+      "name": "Tópicos de Contabilidade Financeira II"
+    },
+    {
+      "id": 358,
+      "codigo": "REC3401",
+      "name": "Tópicos em Formação Econômica e Social do Brasil"
+    },
+    {
+      "id": 359,
+      "codigo": "REC3102",
+      "name": "Tópicos em Meio Ambiente e Recursos Naturais"
+    },
+    {
+      "id": 360,
+      "codigo": "REC4003",
+      "name": "Tópicos Especiais em Finanças"
+    },
+    {
+      "id": 361,
+      "codigo": "REC3210",
+      "name": "Tópicos Especiais em Macroeconomia"
+    },
+    {
+      "id": 362,
+      "codigo": "REC3300",
+      "name": "Tópicos Especiais em Métodos Quantitativos"
+    },
+    {
+      "id": 363,
+      "codigo": "REC3202",
+      "name": "Tópicos Especiais em Microeconomia"
+    },
+    {
+      "id": 364,
+      "codigo": "RAD1612",
+      "name": "Trabalho de Conclusão de Curso I"
+    },
+    {
+      "id": 365,
+      "codigo": "RCC0471",
+      "name": "Trabalho de Conclusão de Curso I"
+    },
+    {
+      "id": 366,
+      "codigo": "RAD1614",
+      "name": "Trabalho de Conclusão de Curso II"
+    },
+    {
+      "id": 367,
+      "codigo": "RCC0472",
+      "name": "Trabalho de Conclusão de Curso II"
+    },
+    {
+      "id": 368,
+      "codigo": "RAD2210",
+      "name": "Trabalho e Subjetividade na Organização"
+    },
+    {
+      "id": 369,
+      "codigo": "RCC0310",
+      "name": "Tributação"
+    },
+    {
+      "id": 370,
+      "codigo": "RCC0120",
+      "name": "Tributação no Mercado Financeiro"
+    }
+  ],
+  "curso": [
+    {
+      "id": 1,
+      "name": "Administração"
+    },
+    {
+      "id": 2,
+      "name": "Contabilidade"
+    },
+    {
+      "id": 3,
+      "name": "Economia"
+    }
+  ],
+  "semestre": [
+    {
+      "id": 1,
+      "name": "1°"
+    },
+    {
+      "id": 2,
+      "name": "2°"
+    },
+    {
+      "id": 3,
+      "name": "3°"
+    },
+    {
+      "id": 4,
+      "name": "4°"
+    },
+    {
+      "id": 5,
+      "name": "5°"
+    },
+    {
+      "id": 6,
+      "name": "6°"
+    },
+    {
+      "id": 7,
+      "name": "7°"
+    },
+    {
+      "id": 8,
+      "name": "8°"
+    },
+    {
+      "id": 9,
+      "name": "9°"
+    },
+    {
+      "id": 10,
+      "name": "10°"
+    }
+  ],
+  "docentes": [
+    {
+      "id": 1,
+      "name": "Adriana Cristina Ferreira Caldana"
+    },
+    {
+      "id": 2,
+      "name": "Adriana Maria Procopio de Araujo"
+    },
+    {
+      "id": 3,
+      "name": "Alex Luiz Ferreira"
+    },
+    {
+      "id": 4,
+      "name": "Alexandre Aparecido Dias"
+    },
+    {
+      "id": 5,
+      "name": "Alexandre Bevilacqua Leoneti"
+    },
+    {
+      "id": 6,
+      "name": "Alexandre Chibebe Nicolella"
+    },
+    {
+      "id": 7,
+      "name": "Alexandre Pereira Salgado Junior"
+    },
+    {
+      "id": 8,
+      "name": "Amaury José Rezende"
+    },
+    {
+      "id": 9,
+      "name": "Amaury Patrick Gremaud"
+    },
+    {
+      "id": 10,
+      "name": "André Lucirton Costa"
+    },
+    {
+      "id": 11,
+      "name": "Bruno Cesar Aurichio Ledo"
+    },
+    {
+      "id": 12,
+      "name": "Carlos Alberto Gabrielli Barreto Campello"
+    },
+    {
+      "id": 13,
+      "name": "Carlos Alberto Grespan Bonacim"
+    },
+    {
+      "id": 14,
+      "name": "Carlos Roberto de Godoy"
+    },
+    {
+      "id": 15,
+      "name": "Claudia Souza Passador"
+    },
+    {
+      "id": 16,
+      "name": "Claudio de Souza Miranda"
+    },
+    {
+      "id": 17,
+      "name": "Daniel Domingues dos Santos"
+    },
+    {
+      "id": 18,
+      "name": "Davi Rogério de Moura Costa"
+    },
+    {
+      "id": 19,
+      "name": "Edgard Monforte Merlo"
+    },
+    {
+      "id": 20,
+      "name": "Elaine Toldo Pazello"
+    },
+    {
+      "id": 21,
+      "name": "Eliezer Martins Diniz"
+    },
+    {
+      "id": 22,
+      "name": "Elizabeth Krauter"
+    },
+    {
+      "id": 23,
+      "name": "Erasmo Jose Gomes"
+    },
+    {
+      "id": 24,
+      "name": "Eugenio José Silva Bitti"
+    },
+    {
+      "id": 25,
+      "name": "Evandro Marcos Saidel Ribeiro"
+    },
+    {
+      "id": 26,
+      "name": "Fabiano Guasti Lima"
+    },
+    {
+      "id": 27,
+      "name": "Fabio Augusto Reis Gomes"
+    },
+    {
+      "id": 28,
+      "name": "Fábio Barbieri"
+    },
+    {
+      "id": 29,
+      "name": "Fernando Antônio de Barros Júnior"
+    },
+    {
+      "id": 30,
+      "name": "Flávia Zóboli Dalmacio"
+    },
+    {
+      "id": 31,
+      "name": "Francisco Anuatti Neto"
+    },
+    {
+      "id": 32,
+      "name": "Geciâne Silveira Porto"
+    },
+    {
+      "id": 33,
+      "name": "Gilberto Aparecido Prataviera"
+    },
+    {
+      "id": 34,
+      "name": "Ildeberto Aparecido Rodello"
+    },
+    {
+      "id": 35,
+      "name": "Irene Kazumi Miura"
+    },
+    {
+      "id": 36,
+      "name": "Jair Roberto do Nascimento"
+    },
+    {
+      "id": 37,
+      "name": "Janaina de Moura Engracia Giraldi"
+    },
+    {
+      "id": 38,
+      "name": "Jefferson Donizeti Pereira Bertolai"
+    },
+    {
+      "id": 39,
+      "name": "João Luiz Passador"
+    },
+    {
+      "id": 40,
+      "name": "Jorge Henrique Caldeira de Oliveira"
+    },
+    {
+      "id": 41,
+      "name": "José Francisco Ferreira Ribeiro"
+    },
+    {
+      "id": 42,
+      "name": "Julio Manuel Pires"
+    },
+    {
+      "id": 43,
+      "name": "Lelio Luiz de Oliveira"
+    },
+    {
+      "id": 44,
+      "name": "Luciana Romano Morilas"
+    },
+    {
+      "id": 45,
+      "name": "Luciano Nakabashi"
+    },
+    {
+      "id": 46,
+      "name": "Luiz Guilherme Dacar da Silva Scorzafave"
+    },
+    {
+      "id": 47,
+      "name": "Maisa de Souza Ribeiro"
+    },
+    {
+      "id": 48,
+      "name": "Marcelo Augusto Ambrozini"
+    },
+    {
+      "id": 49,
+      "name": "Marcelo Botelho da Costa Moraes"
+    },
+    {
+      "id": 50,
+      "name": "Marcelo Sanches Pagliarussi"
+    },
+    {
+      "id": 51,
+      "name": "Márcia Mazzeo Grande"
+    },
+    {
+      "id": 52,
+      "name": "Marcio Bobik Braga"
+    },
+    {
+      "id": 53,
+      "name": "Marcio Poletti Laurini"
+    },
+    {
+      "id": 54,
+      "name": "Marco Aurelio Gumieri Valerio"
+    },
+    {
+      "id": 55,
+      "name": "Marcos Fava Neves"
+    },
+    {
+      "id": 56,
+      "name": "Mariana Simões Ferraz do Amaral Fregonesi"
+    },
+    {
+      "id": 57,
+      "name": "Marina Toledo Lourenção Rocha"
+    },
+    {
+      "id": 58,
+      "name": "Mauricio Ribeiro do Valle"
+    },
+    {
+      "id": 59,
+      "name": "Milton Barossi Filho"
+    },
+    {
+      "id": 60,
+      "name": "Paula Carolina Ciampaglia Nardi"
+    },
+    {
+      "id": 61,
+      "name": "Paulo Sergio Miranda Mendonça"
+    },
+    {
+      "id": 62,
+      "name": "Perla Calil Pongeluppe Wadhy Rebehy"
+    },
+    {
+      "id": 63,
+      "name": "Rafael de Freitas Souza"
+    },
+    {
+      "id": 64,
+      "name": "Renata Auxiliadora Marcheti"
+    },
+    {
+      "id": 65,
+      "name": "Renato Leite Marcondes"
+    },
+    {
+      "id": 66,
+      "name": "Renato Schwambach Vieira"
+    },
+    {
+      "id": 67,
+      "name": "Reynaldo Fernandes"
+    },
+    {
+      "id": 68,
+      "name": "Ricardo Luís Chaves Feijó"
+    },
+    {
+      "id": 69,
+      "name": "Ricardo Luiz Menezes da Silva"
+    },
+    {
+      "id": 70,
+      "name": "Ricardo Rocha de Azevedo"
+    },
+    {
+      "id": 71,
+      "name": "Roberto Guena de Oliveira"
+    },
+    {
+      "id": 72,
+      "name": "Rogerio Ceravolo Calia"
+    },
+    {
+      "id": 73,
+      "name": "Roni Cleber Bonizio"
+    },
+    {
+      "id": 74,
+      "name": "Roseli da Silva"
+    },
+    {
+      "id": 75,
+      "name": "Rudinei Toneto Junior"
+    },
+    {
+      "id": 76,
+      "name": "Sérgio Kannebley Júnior"
+    },
+    {
+      "id": 77,
+      "name": "Sérgio Naruhiko Sakurai"
+    },
+    {
+      "id": 78,
+      "name": "Sérgio Takahashi"
+    },
+    {
+      "id": 79,
+      "name": "Silvia Inês Dallavalle de Pádua"
+    },
+    {
+      "id": 80,
+      "name": "Sílvio Hiroshi Nakao"
+    },
+    {
+      "id": 81,
+      "name": "Simone Vasconcelos Ribeiro Galina"
+    },
+    {
+      "id": 82,
+      "name": "Solange Garcia dos Reis"
+    },
+    {
+      "id": 83,
+      "name": "Tabajara Pimenta Júnior"
+    },
+    {
+      "id": 84,
+      "name": "Valquiria Padilha"
+    },
+    {
+      "id": 85,
+      "name": "Walter Belluzzo Junior"
     }
   ]
 }

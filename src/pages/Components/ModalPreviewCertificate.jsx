@@ -1,37 +1,113 @@
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
-export default function Modal({ closeModal, data, refDuration, refDate, refSubject, refTitle }) {
+
+
+
+export default function Modal({ closeModal, data, refDuration, refDate, refTitle, subject, curso, semestre, docente, refSubject, refName }) {
+
+    const { company } = data[0] ?? []
+
     
-    const { email, theme, label, position, company } = data[0] ?? []
+    const dataPales = new Date(refDate);
+    dataPales.setDate(dataPales.getDate() + 1); 
+    const formDate = dataPales.toLocaleDateString('pt-BR', {
+        day: 'numeric',
+        month: 'numeric',
+        year: 'numeric',
+    });
+
+
+    const dataEmi = new Date();
+    const formattedDate = dataEmi.toLocaleDateString('pt-BR', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+    });
+
+
 
     const style = {
-        position: 'fixed',
+        position: 'absolute',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 600,
+        size: {
+            width: 297,
+            height: 210,
+        },
         bgcolor: 'white',
-        border: '1px solid #000',
-        boxShadow: 24,
+        boxShadow: 30,
         p: 4,
     };
 
+    
+    const visualizarImpressao = () => {
+        const div = document.getElementById('meuDiv');
+        html2canvas(div, { ignoreElements: (node) => node.tagName === 'BUTTON',scale: 3 }).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png');
+            const doc = new jsPDF('l');
+            const imgProps = doc.getImageProperties(imgData);
+            const pdfWidth = doc.internal.pageSize.getWidth();
+
+            const imgWidth = pdfWidth - 20;
+            const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+
+            const posX = 10;
+            const posY = -15;
+
+            doc.addImage(imgData, 'PNG', posX, posY, imgWidth, imgHeight);
+            doc.save('certificado.pdf');
+        });
+    };
+
+
+
     return (
         <>
-            <Box sx={style}>
-                <h1>CERTIFICADO</h1>
-                <p>{label}</p>
-                <p>{theme}</p>
-                <p>{position}</p>
-                <p>{company}</p>
-                <p>{email}</p>
-                <p>{refSubject}</p>
-                <p>{refTitle}</p>
-                <p>{refDuration}</p>
-                <p>{refDate}</p>              
+            <Box sx={style} id="meuDiv">
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }} class="cabCerti">
+                    <div style={{ width: '15%' }} class="logo">
+                        <img src="logosCertificado\logoFEARP.png" alt="Logo da FEARP" style={{ width: '100%' }} />
+                    </div>
+                    <div style={{ width: '70%', padding: '5px', margin: '7px', textAlign: 'center' }} class="cabecalho">
+                        <h3 style={{ fontWeight: 'bold', fontSize: '15px' }}>ESCRITÓRIO DE RELAÇÕES EMPRESARIAIS</h3>
+                        <h4 style={{ fontSize: '14px' }}>PROGRAMA DE PARCERIA UNIVERSIDADE-EMPRESA</h4>
+                    </div>
+                    <div style={{ width: '15%' }} class="logo">
+                        <img src="logosCertificado\logoUSP.png" alt="Logo da USP" style={{ width: '100%' }} />
+                    </div>
+                </div>
+
+                <div style={{ marginTop: '15px', fontSize: '14px', textAlign: 'justify' }} class="conCerti">
+
+                    <p>Certificamos que,</p>
+
+                    <div style={{ textAlign: 'center', fontStyle: 'italic', fontSize: '16px' }} class="infoCerti">
+                        <b>{refName}</b>
+                        <p>da empresa {company}</p>
+                    </div>
+
+                    <p style={{ fontSize: '12px' }} class="textCerti"><br></br>
+                        proferiu a palestra "{refTitle}", aos alunos do {semestre} semestre do curso de {curso},
+                        da Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto da USP, junto a 
+                        disciplina {refSubject} , sob a responsabilidade do Professor(a) {docente}, dentro do Programa de Parceria Universidade-Empresa
+                        patrocinado pelo Escritório de Relações Empresariais da FEA-RP, em {formDate}, com duração de {refDuration} horas.
+                    </p>
+                    <p style={{ textAlign: 'right' }} class="rodapCerti">Ribeirão Preto, {formattedDate}</p>
+
+                    <div style={{ textAlign: 'center', marginBottom: '10px', fontSize:'13px' }} class="validacao">
+                        <b>{docente}</b>
+                        <p>Professor(a) Responsavel</p>
+                    </div>
+
+                </div>
+
                 <Button onClick={() => closeModal(false)}>Fechar</Button>
+                <Button onClick={visualizarImpressao}>Baixar Documento</Button>
             </Box>
         </>
     )
