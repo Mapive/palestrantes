@@ -2,13 +2,13 @@ const usuarios = [
     {
       "id":  1,
       "function":"admin",
-      "username": "Caliu Pina",
+      "username": "Admin",
       "password": "12345"
     },
     {
       "id":  2,
       "function":"prof",
-      "username": "Professor",
+      "username": "User",
       "password": "12345"
     }
   ];
