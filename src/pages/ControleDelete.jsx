@@ -149,7 +149,6 @@ function deleteDb(e) {
                                     </Card>
                                 )}
 
-
                             </Form.Group>
 
                             <center>
