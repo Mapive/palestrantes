@@ -3,7 +3,6 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-//import Palestrantes from "./pages/Palestrantes";
 import Certificado from "./pages/Certificado";
 import Controle from "./pages/Controle";
 import ControleCad from "./pages/ControleCad";
@@ -18,7 +17,6 @@ root.render(
   <BrowserRouter>
     <App />
     <Routes>
-      {/*<Route path="/" element={<Palestrantes />} />*/}
       <Route path="Login" element={<Login />} /> 
       <Route path="/" element={<Login />} /> 
       <Route path="Controle" element={<Controle />} />

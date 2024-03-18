@@ -28,7 +28,7 @@ const Login = () => {
   };
 
   return (
-    <main style={{ width: '400px', margin: '95px auto' }}>
+    <main id="pagLogin">
         <h3 id="iconLogin">Login</h3>
         <hr></hr>
       <div className="mb-3">
@@ -51,6 +51,11 @@ const Login = () => {
           className="form-control"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              logar(e);
+            }
+          }}
         />
         <input
           type="checkbox"

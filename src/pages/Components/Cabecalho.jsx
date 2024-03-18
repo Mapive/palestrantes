@@ -1,11 +1,8 @@
-import React from 'react'; //----------------------27/02
+import React from 'react'; 
 import { Link, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faSchool, faUser, faFilePen, faNewspaper, faUserFriends, faUsersViewfinder, faFileAlt, faFileArchive } from '@fortawesome/free-solid-svg-icons'
 import '../../App.css';
 
 export default function Cabecalho() {
@@ -17,7 +14,7 @@ export default function Cabecalho() {
   return (
     <>
       <div fixed="top" className="layout_cabecalho">
-        <Container style={{ display: 'flex', margin: '0.8rem 25px 0.4rem' }}>{/*corrijir o arquivo css para evitar redundancias*/}
+        <Container style={{ display: 'flex', margin: '0.8rem 25px 0.4rem' }}>
           <Nav>
             <img src="logosCertificado\logoFEARP.png" alt="Logo FEARP" width="90px" height="63px"  border="0" style={{ position:'relative', top: '-3px'}}/>
           </Nav>

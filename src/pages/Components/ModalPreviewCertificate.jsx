@@ -69,37 +69,37 @@ export default function Modal({ closeModal, data, refDuration, refDate, refTitle
     return (
         <>
             <Box sx={style} id="meuDiv">
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }} class="cabCerti">
-                    <div style={{ width: '15%' }} class="logo">
+                <div class="cabCerti">
+                    <div class="logo">
                         <img src="logosCertificado\logoFEARP.png" alt="Logo da FEARP" style={{ width: '100%' }} />
                     </div>
-                    <div style={{ width: '70%', padding: '5px', margin: '7px', textAlign: 'center' }} class="cabecalho">
+                    <div class="cabecalho">
                         <h3 style={{ fontWeight: 'bold', fontSize: '15px' }}>ESCRITÓRIO DE RELAÇÕES EMPRESARIAIS</h3>
                         <h4 style={{ fontSize: '14px' }}>PROGRAMA DE PARCERIA UNIVERSIDADE-EMPRESA</h4>
                     </div>
-                    <div style={{ width: '15%' }} class="logo">
+                    <div class="logo">
                         <img src="logosCertificado\logoUSP.png" alt="Logo da USP" style={{ width: '100%' }} />
                     </div>
                 </div>
 
-                <div style={{ marginTop: '15px', fontSize: '14px', textAlign: 'justify' }} class="conCerti">
+                <div  class="conCerti">
 
                     <p>Certificamos que,</p>
 
-                    <div style={{ textAlign: 'center', fontStyle: 'italic', fontSize: '16px' }} class="infoCerti">
+                    <div  class="infoCerti">
                         <b>{refName}</b>
                         <p>da empresa {company}</p>
                     </div>
 
-                    <p style={{ fontSize: '12px' }} class="textCerti"><br></br>
+                    <p class="textCerti"><br></br>
                         proferiu a palestra "{refTitle}", aos alunos do {semestre} semestre do curso de {curso},
                         da Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto da USP, junto a 
                         disciplina {refSubject} , sob a responsabilidade do Professor(a) {docente}, dentro do Programa de Parceria Universidade-Empresa
                         patrocinado pelo Escritório de Relações Empresariais da FEA-RP, em {formDate}, com duração de {refDuration} horas.
                     </p>
-                    <p style={{ textAlign: 'right' }} class="rodapCerti">Ribeirão Preto, {formattedDate}</p>
+                    <p class="rodapCerti">Ribeirão Preto, {formattedDate}</p>
 
-                    <div style={{ textAlign: 'center', marginBottom: '10px', fontSize:'13px' }} class="validacao">
+                    <div class="validacao">
                         <b>{docente}</b>
                         <p>Professor(a) Responsavel</p>
                     </div>

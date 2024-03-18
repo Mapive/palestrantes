@@ -9,10 +9,10 @@ import Palestrantes from './Palestrantes'
 
 export default function Controle() { 
 
-    const [openPageCon/*, setOpenPageCon*/] = useState(true)
-    const [openPageCad/*, setOpenPageCad*/] = useState(false)
-    const [openPageUpd/*, setOpenPageUpd*/] = useState(false)
-    const [openPageDel/*, setOpenPageDel*/] = useState(false)
+    const [openPageCon] = useState(true)
+    const [openPageCad] = useState(false)
+    const [openPageUpd] = useState(false)
+    const [openPageDel] = useState(false)
     
 
 

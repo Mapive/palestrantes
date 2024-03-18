@@ -17,8 +17,6 @@ import emailjs from '@emailjs/browser'; //------------
 
 
 
-
-
 export default function Certificado() {
 
 
@@ -147,7 +145,7 @@ export default function Certificado() {
             semestre,
             docente,
         }).then(() => {
-            // Adiciona ao histórico -------------------------------------adicionei hoje
+            // Adiciona ao histórico -------------------------------------
             const updatedDatabase = allDatabase.map(palestrante => {
                 if (palestrante.name === name) {
                     palestrante.historico.unshift(historico); // Adiciona ao início do array (últimas 3 palestras)
@@ -155,7 +153,7 @@ export default function Certificado() {
                 return palestrante;
             });
             setAllDatabase(updatedDatabase);
-            //--------------------------------------------------------------adicionei hoje
+            //--------------------------------------------------------------
             notifySuccess()
             ClearRefs()
         

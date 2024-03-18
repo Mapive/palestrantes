@@ -79,23 +79,8 @@ export default function ControleDelete() {
         setName('');
         setPalestrante({});
     }
-/*
-    function deleteDb(e) {
-        loadDb()
-        e.preventDefault();
-        api.patch(`/palestrantes/${index}`, {
-            "delete": "true"
-        }).then(() => {
-            notifySuccess();
-            ClearRef();
-            loadDb()
-        }).catch(function (error) {
-            console.log(error)
-            notifyError();
-        })
-        ClearRef()
-       }
-*/
+
+    
 function deleteDb(e) {
     e.preventDefault();
     if (index === undefined) {
