@@ -15,6 +15,10 @@ export default function Palestrantes() {
   const [mostrarDetalhes, setMostrarDetalhes] = useState({});
   const [deletingPalestranteId, setDeletingPalestranteId] = useState(null);
   const [usuarioFuncao, setUsuarioFuncao] = useState(null);
+  const [historico, setHistorico] = useState([]);
+  const [historicoFiltrado, setHistoricoFiltrado] = useState([]);
+
+
 
   useEffect(() => {
     const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
@@ -22,7 +26,7 @@ export default function Palestrantes() {
       setUsuarioFuncao(usuarioLogado.function);
     }
   }, []);
-  
+
 
   useEffect(() => {
     api.get('/palestrantes').then((response) => {
@@ -36,6 +40,17 @@ export default function Palestrantes() {
     });
   }, []);
 
+
+  useEffect(() => {
+    api.get('/historico').then((response) => {
+      setHistorico(response.data);
+    })
+      .catch((error) => {
+        console.error('Erro ao buscar historico das últimas palestras:', error);
+      });
+  }, []);
+
+
   const handleBuscar = () => {
 
     const filtrados = dataPalestrantes.filter((palestrante) => {
@@ -46,7 +61,23 @@ export default function Palestrantes() {
     setPalestrantesFiltrados(filtrados);
     setPesquisaRealizada(true);
 
+
+    // Filtrar o histórico com base no primeiro palestrante encontrado
+    if (filtrados.length > 0) {
+      filtrarHistorico(filtrados[0].name, filtrados[0].company);
+    }
+
   };
+
+  const filtrarHistorico = (nomePalestrante, company) => {
+    const historicoFiltrado = historico.filter(item =>
+      item.name.toLowerCase().includes(nomePalestrante.toLowerCase()) &&
+      item.company.toLowerCase().includes(company.toLowerCase())
+    ).slice(-3); // Limita o resultado aos 3 últimos registros
+    setHistoricoFiltrado(historicoFiltrado);
+  };
+
+
 
   const clearSearch = () => {
     setNomePalestrante("");
@@ -92,6 +123,7 @@ export default function Palestrantes() {
       setDeletingPalestranteId(null);
     }
   }, [dataPalestrantes, deletingPalestranteId]);
+
 
 
   return (
@@ -146,14 +178,35 @@ export default function Palestrantes() {
                           <p><strong>Área da palestra:</strong> {palestrante.area}</p>
                           <p><strong>Tema da palestra:</strong> {palestrante.theme}</p>
                           <strong>LinkedIn:</strong> {palestrante.linkedin}
-                          {/*----AQUI SERÁ 'ARMAZENADO' AS ULTIMAS 3 PALESTRAS DO PALESTRANTE----*/}
+
                           <hr></hr>
-                          <p><strong>Histórico das ultimas palestras:</strong></p>
-                          <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
+
+                          <div>
+                            <div>
+                              <p><strong>Histórico das ultimas palestras:</strong></p>
+                              <table style={{ borderSpacing: "10px" }}>
+                                <thead>
+                                  <tr>
+                                    <th style={{ padding: "10px" }}>Data</th>
+                                    <th style={{ padding: "10px" }}>Disciplina</th>
+                                    <th style={{ padding: "10px" }}>Professor Responsavel</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                  {historicoFiltrado.map((item, index) => (
+                                    <tr key={index}>
+                                      <td style={{ padding: "10px" }}>{item.date}</td>
+                                      <td style={{ padding: "10px" }}>{item.disciplina}</td>
+                                      <td style={{ padding: "10px" }}>{item.responsible}</td>
+                                    </tr>
+                                  ))}
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
                         </Card>
                       </div>
                     )}
@@ -186,6 +239,5 @@ export default function Palestrantes() {
     </main>
   );
 }
-  
 
-  
+

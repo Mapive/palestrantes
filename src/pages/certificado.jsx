@@ -344,7 +344,7 @@ export default function Certificado() {
 
                             {openPreviewCertificate && <Modal closeModal={setOpenPreviewCertificate} data={filteredData}
                                 refName={refName.current.value} refDuration={refDuration.current.value} refDate={refDate.current.value} refSubject={subject ? `(${subject.codigo}) - ${subject.name}` : ''}
-                                refTitle={refTitle.current.value} subject={subject} curso={curso} semestre={semestre} docente={docente} />}
+                                refTitle={refTitle.current.value} subject={subject} curso={curso} semestre={semestre} docente={docente} refCompany={refCompany.current.value}/>}
                         </Form>
                     </Form>
                 </Card.Body>

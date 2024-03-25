@@ -3,17 +3,19 @@ import { Box } from "@mui/system";
 import React from "react";
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+//import axios from 'axios'; 
 
 
 
 
-export default function Modal({ closeModal, data, refDuration, refDate, refTitle, subject, curso, semestre, docente, refSubject, refName }) {
 
-    const { company } = data[0] ?? []
+export default function Modal({ closeModal, data, refDuration, refDate, refTitle, subject, curso, semestre, docente, refSubject, refName, refCompany }) {
 
-    
+   // const { company } = data[0] ?? []
+
+
     const dataPales = new Date(refDate);
-    dataPales.setDate(dataPales.getDate() + 1); 
+    dataPales.setDate(dataPales.getDate() + 1);
     const formDate = dataPales.toLocaleDateString('pt-BR', {
         day: 'numeric',
         month: 'numeric',
@@ -44,10 +46,10 @@ export default function Modal({ closeModal, data, refDuration, refDate, refTitle
         p: 4,
     };
 
-    
+
     const visualizarImpressao = () => {
         const div = document.getElementById('meuDiv');
-        html2canvas(div, { ignoreElements: (node) => node.tagName === 'BUTTON',scale: 3 }).then((canvas) => {
+        html2canvas(div, { ignoreElements: (node) => node.tagName === 'BUTTON', scale: 3 }).then((canvas) => {
             const imgData = canvas.toDataURL('image/png');
             const doc = new jsPDF('l');
             const imgProps = doc.getImageProperties(imgData);
@@ -61,8 +63,36 @@ export default function Modal({ closeModal, data, refDuration, refDate, refTitle
 
             doc.addImage(imgData, 'PNG', posX, posY, imgWidth, imgHeight);
             doc.save('certificado.pdf');
+
+            // Chama a função postHistor após o PDF ser salvo
+            //postHistor();
+
         });
     };
+
+/*
+    function postHistor() {
+        const url = 'http://localhost:5000/historico';
+    
+        const data = {
+            "name": refName.current.value,
+            "responsible": docente,
+            "curso": curso,
+            "semestre": semestre,
+            "titulo": refTitle,
+            "duracao": refDuration
+        };
+    
+        axios.post(url, data)
+            .then(response => {
+                console.log('Certificado armazenado com sucesso:', response.data);
+            })
+            .catch(error => {
+                console.error('Erro ao armazenar o certificado:', error);
+            });
+    }
+    
+  */  
 
 
 
@@ -82,18 +112,18 @@ export default function Modal({ closeModal, data, refDuration, refDate, refTitle
                     </div>
                 </div>
 
-                <div  class="conCerti">
+                <div class="conCerti">
 
                     <p>Certificamos que,</p>
 
-                    <div  class="infoCerti">
+                    <div class="infoCerti">
                         <b>{refName}</b>
-                        <p>da empresa {company}</p>
+                        <p>da empresa {refCompany}</p>
                     </div>
 
                     <p class="textCerti"><br></br>
                         proferiu a palestra "{refTitle}", aos alunos do {semestre} semestre do curso de {curso},
-                        da Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto da USP, junto a 
+                        da Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto da USP, junto a
                         disciplina {refSubject} , sob a responsabilidade do Professor(a) {docente}, dentro do Programa de Parceria Universidade-Empresa
                         patrocinado pelo Escritório de Relações Empresariais da FEA-RP, em {formDate}, com duração de {refDuration} horas.
                     </p>

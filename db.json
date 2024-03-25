@@ -7,8 +7,7 @@
       "email": "marcos@marcos",
       "delete": "false",
       "theme": "Tema Marcos",
-      "id": "1",
-      "historico": []
+      "id": "1"
     },
     {
       "name": "Jean Pereira",
@@ -20,8 +19,7 @@
       "id": "2",
       "phone": "16999999997",
       "linkedin": "https://www.linkedin.com/in/jean",
-      "area": "Tecnologia",
-      "historico": []
+      "area": "Tecnologia"
     },
     {
       "name": "Camilla Nappi",
@@ -30,8 +28,7 @@
       "email": "cami@cami",
       "id": "3",
       "theme": "Tema Camilla",
-      "delete": "false",
-      "historico": []
+      "delete": "false"
     },
     {
       "name": "Caliu Pina",
@@ -43,92 +40,63 @@
       "linkedin": "https://www.linkedin.com/in/caliu",
       "delete": "false",
       "id": "4",
-      "area": "Desenvolvimento Web",
-      "historico": []
+      "area": "Desenvolvimento Web"
     },
     {
-      "name": "teste",
-      "email": "jadgsuaadvfcwvdgchj@gmail.com",
-      "phone": "9999999999999",
-      "company": "teste",
-      "position": "teste",
-      "area": "teste",
-      "theme": "teste",
-      "linkedin": "",
-      "delete": "false",
-      "id": "5"
+      "id": "35ff",
+      "name": "Palestrante Teste",
+      "email": "teste@gmail.com",
+      "phone": "999999999999",
+      "company": "Empresa Teste",
+      "position": "Cargo Teste",
+      "area": "Palestra Teste",
+      "theme": "Tema Teste",
+      "linkedin": "https://www.linkedin.com/in/teste",
+      "delete": "false"
     }
   ],
-  "certificados": [
+  "historico": [
     {
-      "palestrante": "Marcos Vinícius Pereira",
-      "date": "2022-05-12",
-      "duration": "60",
-      "title": "Titulo",
-      "subject": "disciplina c",
-      "id": "1"
+      "name": "Caliu Pina",
+      "company": "Dev LTDA",
+      "date": "22/03/2023",
+      "disciplina": "Disciplina A",
+      "responsible": "Professor A"
     },
     {
-      "palestrante": "Marcos Vinícius Pereira",
-      "date": "2022-06-11",
-      "duration": "120",
-      "title": "Titulo",
-      "subject": "disciplina c",
-      "id": "2"
+      "name": "Caliu Pina",
+      "company": "Dev LTDA",
+      "date": "23/03/2023",
+      "disciplina": "Disciplina B",
+      "responsible": "Professor B"
     },
     {
-      "palestrante": "Jean Pereira",
-      "date": "2022-05-26",
-      "duration": "120",
-      "title": "Titulo Jean",
-      "subject": "disciplina b",
-      "id": "3"
+      "name": "Caliu Pina",
+      "company": "Dev LTDA",
+      "date": "24/03/2023",
+      "disciplina": "Disciplina C",
+      "responsible": "Professor C"
     },
     {
-      "palestrante": "Jean Pereira",
-      "date": "2022-05-06",
-      "duration": "120",
-      "title": "titleeeee",
-      "subject": "disciplina b",
-      "id": "4"
+      "name": "Jean Pereira",
+      "company": "FEARP",
+      "date": "12/01/2024",
+      "disciplina": "Desenvolvimento Web",
+      "responsible": "Ildeberto Rodello"
     },
     {
-      "palestrante": "Jean Pereira",
-      "date": "2022-05-26",
-      "duration": "12",
-      "title": "213",
-      "subject": "disciplina a",
-      "id": "5"
+      "name": "Caliu Pina",
+      "company": "Dev LTDA",
+      "date": "15/01/2024",
+      "disciplina": "Disciplina D",
+      "responsible": "Professor D"
     },
     {
-      "palestrante": "Caliu Pina",
-      "date": "2023-11-13",
-      "duration": "2",
-      "title": "Industria 4.0",
-      "subject": "disciplina c",
-      "id": "6"
-    }
-  ],
-  "temas": [
-    {
-      "id": "1",
-      "name": "Tema 1"
-    },
-    {
-      "id": "2",
-      "name": "Tema 2"
-    }
-  ],
-  "tema_do_palestrante": [
-    {
-      "id": "1",
-      "idTema": 1,
-      "idPalestrante": 1
-    },
-    {
-      "id": "2",
-      "idTema": 2,
-      "idPalestrante": 1
+      "name": "Caliu Pina",
+      "company": "Dev LTDA",
+      "date": "15/01/2024",
+      "disciplina": "Disciplina E",
+      "responsible": "Professor E"
     }
   ],
   "disciplinas": [
